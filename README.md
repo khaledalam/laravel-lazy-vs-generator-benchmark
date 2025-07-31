@@ -1,4 +1,4 @@
-# Laravel Lazy Collections vs Generators Benchmark
+## Laravel Lazy Collections vs Generators Benchmark
 
 This small Laravel benchmarking tool compares the **performance and memory usage** of three different iteration techniques:
 
@@ -10,7 +10,7 @@ This small Laravel benchmarking tool compares the **performance and memory usage
 
 ---
 
-## 📊 Benchmark Purpose
+### 📊 Benchmark Purpose
 
 This command measures:
 - ⏱ **Time Taken**
@@ -20,7 +20,7 @@ Useful for developers aiming to optimize loops, data processing, or large ETL pi
 
 ---
 
-## 🛠 Installation
+### 🛠 Installation
 
 1. Clone the repository or add the command to your Laravel project.
 2. Register the command inside your `App\Console\Kernel.php`:
@@ -37,7 +37,7 @@ protected $commands = [
 php artisan benchmark:collections
 ```
 
-📋 Sample Output
+### 📋 Sample Output
 ```yaml
 Starting benchmarks...
 
@@ -55,3 +55,20 @@ Time Taken: 0.191 sec
 
 ✅ Done!
 ```
+
+### 📌 Summary
+Insight: PHP Generators often provide the lowest memory footprint. Lazy Collections are more readable within Laravel but slightly slower. Eager Collections are fastest, but consume more memory.
+
+### 📦 Use Case
+This tool is ideal for:
+- Laravel performance comparison
+- Teaching lazy evaluation
+- Evaluating data processing trade-offs
+
+### 🧑‍💻 Author<br />
+Khaled Alam<br />
+Senior PHP Engineer | Dubai 🇦🇪<br />
+[Portfolio](https://khaledalam.net/) | [LinkedIn](https://www.linkedin.com/in/khaledalam)
+
+### 🪄 License
+MIT
